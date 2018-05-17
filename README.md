@@ -39,5 +39,6 @@ Test via kubectl
 # Reference
 
 * Sample k8s authn / authz webhook [[blog]](https://medium.com/google-cloud/kubernetes-webhook-authentication-authorization-with-minikube-67b2b385ffd1) [[src]](https://github.com/salrashid123/k8s_webhook_helloworld)
+* Example authn / authz webhook - yahoo/k8s-athenz-webhook [[src]](https://github.com/yahoo/k8s-athenz-webhook)
 * [Mutual TLS authentication between k8s-apiserver and authn webhook](https://kubernetes.io/docs/admin/authentication/#webhook-token-authentication)
 * [Mutual TLS authentication between k8s-apiserver and authz webhook](https://kubernetes.io/docs/admin/authorization/webhook/#configuration-file-format)
