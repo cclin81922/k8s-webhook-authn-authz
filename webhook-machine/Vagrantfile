@@ -1,0 +1,16 @@
+BOX = "bento/centos-7.4"
+BOX_VERSION = "201801.02.0"
+
+Vagrant.configure("2") do |config|
+  config.vm.define "webhook-machine" do |d|
+    d.vm.box = BOX
+    d.vm.box_version = BOX_VERSION
+    d.vm.box_check_update = false
+    d.vm.hostname = "webhook-machine"
+    d.vm.network "private_network", ip: "192.168.33.101"
+    d.vm.provider "virtualbox" do |p|
+      p.cpus = "1"
+      p.memory = "512"
+    end
+  end
+end
