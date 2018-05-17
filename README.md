@@ -16,6 +16,26 @@ vagrant up
 # kubectl exec kube-apiserver-docker-for-desktop ping 192.168.33.101 -n kube-system
 ```
 
+Configure `k8s-apiserver` then restart it
+
+```
+screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+
+# download files
+#
+# * ca.crt
+# * webhook-client.crt
+# * webhook-client.key
+
+# mod /etc/kubernetes/manifests/kube-apiserver.yaml
+```
+
+Test via kubectl
+
+```
+?
+```
+
 # Reference
 
 * Sample k8s authn / authz webhook [[blog]](https://medium.com/google-cloud/kubernetes-webhook-authentication-authorization-with-minikube-67b2b385ffd1) [[src]](https://github.com/salrashid123/k8s_webhook_helloworld)
