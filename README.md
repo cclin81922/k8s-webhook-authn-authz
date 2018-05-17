@@ -1,5 +1,13 @@
 # k8s-webhook-authn-authz
 
+Prerequisites
+
+* Your own TLS certificate authority: `ca.crt`
+* Self-signed server certificate issued by your own TLS certificate authority: `webhook-server.crt`
+* Self-signed client certificate issued by your own TLS certificate authority: `webhook-client.crt`
+
+Usage
+
 # Reference
 
 * Sample k8s authn / authz webhook [[blog]](https://medium.com/google-cloud/kubernetes-webhook-authentication-authorization-with-minikube-67b2b385ffd1) [[src]](https://github.com/salrashid123/k8s_webhook_helloworld)
